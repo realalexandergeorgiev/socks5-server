@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+<ItemGroup>
+  <PackageReference Include="Microsoft.Extensions.Logging" Version="6.*" />
+  <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="6.*" />
+</ItemGroup>
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <AssemblyName>socks5-server</AssemblyName>
+    <RootNamespace>Socks5Server</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <!-- Single self-contained exe -->
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>true</SelfContained>
+    <RuntimeIdentifier>linux-x64</RuntimeIdentifier>
+  </PropertyGroup>
+</Project>
