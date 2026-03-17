@@ -24,6 +24,8 @@ Feature-equivalent to [pysocks](https://github.com/realalexandergeorgiev/pysocks
 ```bash
 # Linux / macOS
 dotnet publish -c Release -r linux-x64
+# or size optimized Windows x64
+dotnet publish -r win-x64 -c Release -p:PublishSingleFile=true -p:PublishTrimmed=true --self-contained true
 
 # Windows
 dotnet publish -c Release -r win-x64
